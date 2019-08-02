@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B54EC3E122F4823C0071CCD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54EC3E022F4823C0071CCD7 /* AppDelegate.swift */; };
-		B54EC3E322F4823C0071CCD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54EC3E222F4823C0071CCD7 /* ViewController.swift */; };
 		B54EC3E622F4823C0071CCD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54EC3E422F4823C0071CCD7 /* Main.storyboard */; };
 		B54EC3E922F4823C0071CCD7 /* LUCID_WEATHER_APP___iOLAP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B54EC3E722F4823C0071CCD7 /* LUCID_WEATHER_APP___iOLAP.xcdatamodeld */; };
 		B54EC3EB22F4823E0071CCD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B54EC3EA22F4823E0071CCD7 /* Assets.xcassets */; };
 		B54EC3EE22F4823E0071CCD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54EC3EC22F4823E0071CCD7 /* LaunchScreen.storyboard */; };
+		B868C91E39B044B69AE46F40 /* Pods_LUCID_WEATHER_APP___iOLAP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEDC7F30BB30206AC490922 /* Pods_LUCID_WEATHER_APP___iOLAP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		876DDD5D956AB485524128DD /* Pods-LUCID WEATHER APP - iOLAP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LUCID WEATHER APP - iOLAP.release.xcconfig"; path = "Pods/Target Support Files/Pods-LUCID WEATHER APP - iOLAP/Pods-LUCID WEATHER APP - iOLAP.release.xcconfig"; sourceTree = "<group>"; };
+		8AEDC7F30BB30206AC490922 /* Pods_LUCID_WEATHER_APP___iOLAP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_LUCID_WEATHER_APP___iOLAP.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54EC3DD22F4823C0071CCD7 /* LUCID WEATHER APP - iOLAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LUCID WEATHER APP - iOLAP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54EC3E022F4823C0071CCD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B54EC3E222F4823C0071CCD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B54EC3E522F4823C0071CCD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B54EC3E822F4823C0071CCD7 /* LUCID_WEATHER_APP___iOLAP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "LUCID_WEATHER_APP___iOLAP.xcdatamodel"; sourceTree = "<group>"; };
 		B54EC3EA22F4823E0071CCD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B54EC3ED22F4823E0071CCD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B54EC3EF22F4823E0071CCD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB60606480DB92D0A08F93B3 /* Pods-LUCID WEATHER APP - iOLAP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LUCID WEATHER APP - iOLAP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LUCID WEATHER APP - iOLAP/Pods-LUCID WEATHER APP - iOLAP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B868C91E39B044B69AE46F40 /* Pods_LUCID_WEATHER_APP___iOLAP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26E257DED63875E6CE1D009D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB60606480DB92D0A08F93B3 /* Pods-LUCID WEATHER APP - iOLAP.debug.xcconfig */,
+				876DDD5D956AB485524128DD /* Pods-LUCID WEATHER APP - iOLAP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		784C81827FA89B79E57C8B59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AEDC7F30BB30206AC490922 /* Pods_LUCID_WEATHER_APP___iOLAP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B54EC3D422F4823C0071CCD7 = {
 			isa = PBXGroup;
 			children = (
 				B54EC3DF22F4823C0071CCD7 /* LUCID WEATHER APP - iOLAP */,
 				B54EC3DE22F4823C0071CCD7 /* Products */,
+				26E257DED63875E6CE1D009D /* Pods */,
+				784C81827FA89B79E57C8B59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				B54EC3E022F4823C0071CCD7 /* AppDelegate.swift */,
-				B54EC3E222F4823C0071CCD7 /* ViewController.swift */,
 				B54EC3E422F4823C0071CCD7 /* Main.storyboard */,
 				B54EC3EA22F4823E0071CCD7 /* Assets.xcassets */,
 				B54EC3EC22F4823E0071CCD7 /* LaunchScreen.storyboard */,
@@ -74,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B54EC3F222F4823E0071CCD7 /* Build configuration list for PBXNativeTarget "LUCID WEATHER APP - iOLAP" */;
 			buildPhases = (
+				85C2613D14D16F418DBB06F2 /* [CP] Check Pods Manifest.lock */,
 				B54EC3D922F4823C0071CCD7 /* Sources */,
 				B54EC3DA22F4823C0071CCD7 /* Frameworks */,
 				B54EC3DB22F4823C0071CCD7 /* Resources */,
+				0F2BA7F000C694B1C59BAAFA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +156,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F2BA7F000C694B1C59BAAFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LUCID WEATHER APP - iOLAP/Pods-LUCID WEATHER APP - iOLAP-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LUCID WEATHER APP - iOLAP/Pods-LUCID WEATHER APP - iOLAP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85C2613D14D16F418DBB06F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LUCID WEATHER APP - iOLAP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B54EC3D922F4823C0071CCD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B54EC3E322F4823C0071CCD7 /* ViewController.swift in Sources */,
 				B54EC3E122F4823C0071CCD7 /* AppDelegate.swift in Sources */,
 				B54EC3E922F4823C0071CCD7 /* LUCID_WEATHER_APP___iOLAP.xcdatamodeld in Sources */,
 			);
@@ -284,11 +345,13 @@
 		};
 		B54EC3F322F4823E0071CCD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB60606480DB92D0A08F93B3 /* Pods-LUCID WEATHER APP - iOLAP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z29U9TK6XW;
 				INFOPLIST_FILE = "LUCID WEATHER APP - iOLAP/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,11 +365,13 @@
 		};
 		B54EC3F422F4823E0071CCD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 876DDD5D956AB485524128DD /* Pods-LUCID WEATHER APP - iOLAP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z29U9TK6XW;
 				INFOPLIST_FILE = "LUCID WEATHER APP - iOLAP/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
