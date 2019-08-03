@@ -16,8 +16,9 @@ class AlamofireNetwork {
     let lat = "lat="
     let log = "&lon="
     let appID = "&APPID="
+    let city = "q="
     
-    func requestDataFromAPI(log: Double, lat: Double, completion:@escaping (Weather)-> Void) {
+    func requestWeatherViaCoord(log: Double, lat: Double, completion:@escaping (Weather)-> Void) {
         let url = self.baseURL + self.lat + String(lat) + self.log + String(log) + self.appID + self.ApiKey
         
         Alamofire.request(url)
@@ -38,4 +39,28 @@ class AlamofireNetwork {
                 }
         }
     }
+    
+    func requestWeatherViaCityName(CityName: String,completion:@escaping (Weather)-> Void) {
+        let cleanedURL = CityName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        let url = self.baseURL + self.city + cleanedURL! + self.appID + self.ApiKey
+        
+        Alamofire.request(url)
+            .responseJSON { (response) in
+                guard response.result.error == nil else {
+                    print("Error calling")
+                    print(response.result.error)
+                    return
+                }
+                
+                let decoder = JSONDecoder()
+                print(response)
+                do {
+                    let data = try decoder.decode(Weather.self, from: response.data!)
+                    completion(data)
+                }catch let error {
+                    print(error.localizedDescription)
+                }
+        }
+    }
+    
 }
