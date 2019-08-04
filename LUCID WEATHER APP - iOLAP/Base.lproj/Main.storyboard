@@ -10,22 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="yP4-fE-mzz">
-            <objects>
-                <viewController id="XMN-fT-I3B" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1SA-yX-UkN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.34010247874576982" green="1" blue="0.21973780239381291" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="S3S-rl-QEo"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" systemItem="history" id="Znb-OQ-mal"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MqX-Fq-tCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="81" y="458"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="OmK-K2-Pco">
             <objects>
@@ -37,7 +21,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="yOA-Rd-db2" kind="relationship" relationship="viewControllers" id="uV6-2A-OUh"/>
-                        <segue destination="XMN-fT-I3B" kind="relationship" relationship="viewControllers" id="TjA-wP-hRM"/>
+                        <segue destination="yNz-sf-Uxy" kind="relationship" relationship="viewControllers" id="6qJ-1L-Zay"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dmP-tr-NwM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -281,6 +265,71 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTA-kE-nZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-548" y="457"/>
+        </scene>
+        <!--History Table View Controller-->
+        <scene sceneID="gfP-H9-OfE">
+            <objects>
+                <tableViewController id="yNz-sf-Uxy" customClass="HistoryTableViewController" customModule="LUCID_WEATHER_APP___iOLAP" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HXc-RX-DBf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" id="Xog-kQ-6id" customClass="HistoryTableViewCell" customModule="LUCID_WEATHER_APP___iOLAP" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xog-kQ-6id" id="o3f-aU-uDL">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Zagreb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzT-AK-cFO">
+                                            <rect key="frame" x="28" y="53" width="108" height="42"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25.85" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9O-IW-bTa">
+                                            <rect key="frame" x="227" y="46" width="132" height="60"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12/03 2019 14:59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hak-IL-xBO">
+                                            <rect key="frame" x="120" y="111" width="134" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="qzT-AK-cFO" firstAttribute="top" secondItem="o3f-aU-uDL" secondAttribute="topMargin" constant="42" id="7NG-zG-CNO"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Hak-IL-xBO" secondAttribute="bottom" constant="7" id="93p-m9-u0G"/>
+                                        <constraint firstItem="Hak-IL-xBO" firstAttribute="top" secondItem="qzT-AK-cFO" secondAttribute="bottom" constant="16" id="9fk-lV-GAe"/>
+                                        <constraint firstAttribute="trailing" secondItem="F9O-IW-bTa" secondAttribute="trailing" constant="16" id="EsD-Pu-I8o"/>
+                                        <constraint firstItem="qzT-AK-cFO" firstAttribute="centerY" secondItem="o3f-aU-uDL" secondAttribute="centerY" id="Pb3-MC-Ybm"/>
+                                        <constraint firstItem="Hak-IL-xBO" firstAttribute="centerX" secondItem="o3f-aU-uDL" secondAttribute="centerX" id="Swe-Ne-iyf"/>
+                                        <constraint firstItem="qzT-AK-cFO" firstAttribute="leading" secondItem="o3f-aU-uDL" secondAttribute="leadingMargin" constant="12" id="YDJ-Ee-ZYV"/>
+                                        <constraint firstItem="Hak-IL-xBO" firstAttribute="top" secondItem="F9O-IW-bTa" secondAttribute="bottom" constant="6.5" id="ewU-Q4-w30"/>
+                                        <constraint firstItem="F9O-IW-bTa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qzT-AK-cFO" secondAttribute="trailing" constant="8" symbolic="YES" id="t1T-HT-jx3"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cityNameLabel" destination="qzT-AK-cFO" id="sPN-qw-iUD"/>
+                                    <outlet property="dateLabel" destination="Hak-IL-xBO" id="CSa-dd-TYX"/>
+                                    <outlet property="temperatureLabel" destination="F9O-IW-bTa" id="SkN-IR-HTq"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yNz-sf-Uxy" id="nAJ-EA-iwJ"/>
+                            <outlet property="delegate" destination="yNz-sf-Uxy" id="ETc-x7-BCx"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="WUI-bN-ZaJ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4h-RR-CUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="231" y="457"/>
         </scene>
     </scenes>
 </document>

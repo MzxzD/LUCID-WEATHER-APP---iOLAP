@@ -10,9 +10,10 @@ import UIKit
 
 class HistoryTableViewController: UITableViewController {
 
+    
+    let controller = HistoryController()
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -20,27 +21,36 @@ class HistoryTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+          self.controller.retrieveData()
+            self.tableView.reloadData()
+    }
+
+
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.controller.savedWeather.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryCell", for: indexPath) as! HistoryTableViewCell
+        let weatherForCell = self.controller.savedWeather[indexPath.row]
+        
+        cell.cityNameLabel.text = weatherForCell.cityName
+        cell.dateLabel.text = weatherForCell.date
+        cell.temperatureLabel.text = String(round(100 * (weatherForCell.temperature - 273.15)) / 100) + " °C"
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
