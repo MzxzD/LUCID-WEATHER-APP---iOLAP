@@ -12,6 +12,10 @@
 		B502016D22F57DC00086622E /* AlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B502016C22F57DC00086622E /* AlamofireManager.swift */; };
 		B502017022F580660086622E /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B502016F22F580660086622E /* Weather.swift */; };
 		B502017422F5ABB40086622E /* WeatherForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B502017322F5ABB40086622E /* WeatherForecastViewController.swift */; };
+		B53E95F722F6EFCA00429736 /* CityNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E95F622F6EFCA00429736 /* CityNameController.swift */; };
+		B53E95F922F6EFFC00429736 /* Cities.json in Resources */ = {isa = PBXBuildFile; fileRef = B53E95F822F6EFFC00429736 /* Cities.json */; };
+		B53E95FB22F6F03100429736 /* CityNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E95FA22F6F03100429736 /* CityNames.swift */; };
+		B53E95FD22F6F56900429736 /* WeatherForecastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E95FC22F6F56900429736 /* WeatherForecastController.swift */; };
 		B54EC3E122F4823C0071CCD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54EC3E022F4823C0071CCD7 /* AppDelegate.swift */; };
 		B54EC3E622F4823C0071CCD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54EC3E422F4823C0071CCD7 /* Main.storyboard */; };
 		B54EC3E922F4823C0071CCD7 /* LUCID_WEATHER_APP___iOLAP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B54EC3E722F4823C0071CCD7 /* LUCID_WEATHER_APP___iOLAP.xcdatamodeld */; };
@@ -28,6 +32,10 @@
 		B502016C22F57DC00086622E /* AlamofireManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireManager.swift; sourceTree = "<group>"; };
 		B502016F22F580660086622E /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		B502017322F5ABB40086622E /* WeatherForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastViewController.swift; sourceTree = "<group>"; };
+		B53E95F622F6EFCA00429736 /* CityNameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityNameController.swift; sourceTree = "<group>"; };
+		B53E95F822F6EFFC00429736 /* Cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cities.json; sourceTree = "<group>"; };
+		B53E95FA22F6F03100429736 /* CityNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityNames.swift; sourceTree = "<group>"; };
+		B53E95FC22F6F56900429736 /* WeatherForecastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastController.swift; sourceTree = "<group>"; };
 		B54EC3DD22F4823C0071CCD7 /* LUCID WEATHER APP - iOLAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LUCID WEATHER APP - iOLAP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54EC3E022F4823C0071CCD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B54EC3E522F4823C0071CCD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,6 +96,7 @@
 		B502016622F4B2060086622E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B53E95F622F6EFCA00429736 /* CityNameController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -120,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				B502016F22F580660086622E /* Weather.swift */,
+				B53E95FA22F6F03100429736 /* CityNames.swift */,
+				B53E95F822F6EFFC00429736 /* Cities.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,6 +146,7 @@
 		B502017222F5AB960086622E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B53E95FC22F6F56900429736 /* WeatherForecastController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -235,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B53E95F922F6EFFC00429736 /* Cities.json in Resources */,
 				B54EC3EE22F4823E0071CCD7 /* LaunchScreen.storyboard in Resources */,
 				B54EC3EB22F4823E0071CCD7 /* Assets.xcassets in Resources */,
 				B54EC3E622F4823C0071CCD7 /* Main.storyboard in Resources */,
@@ -288,6 +301,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B502016A22F57A600086622E /* CityNameViewController.swift in Sources */,
+				B53E95FD22F6F56900429736 /* WeatherForecastController.swift in Sources */,
+				B53E95F722F6EFCA00429736 /* CityNameController.swift in Sources */,
+				B53E95FB22F6F03100429736 /* CityNames.swift in Sources */,
 				B54EC3E122F4823C0071CCD7 /* AppDelegate.swift in Sources */,
 				B502016322F4B1C70086622E /* CityNameCell.swift in Sources */,
 				B502016D22F57DC00086622E /* AlamofireManager.swift in Sources */,

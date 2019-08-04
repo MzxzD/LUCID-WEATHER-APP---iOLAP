@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LUCID WEATHER APP - iOLAP/CityNameTableView/Controller/CityNameController.swift"
+            timestampString = "586614721.113572"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "loadJson(filename:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LUCID WEATHER APP - iOLAP/CityNameTableView/Views/CityNameViewController.swift"
+            timestampString = "586614721.113664"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LUCID WEATHER APP - iOLAP/CityNameTableView/Controller/CityNameController.swift"
+            timestampString = "586614721.113741"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "fetchLocalData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LUCID WEATHER APP - iOLAP/CityNameTableView/Controller/CityNameController.swift"
+            timestampString = "586614721.113799"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "loadJson(filename:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LUCID WEATHER APP - iOLAP/WeatherForecast/View/WeatherForecastViewController.swift"
+            timestampString = "586614721.1138591"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "setupView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LUCID WEATHER APP - iOLAP/Network/AlamofireManager.swift"
+            timestampString = "586614721.114357"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "requestWeatherViaCityName(CityName:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LUCID WEATHER APP - iOLAP/Network/AlamofireManager.swift"
+            timestampString = "586614721.1144201"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "requestWeatherViaCityName(CityName:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in LUCID_WEATHER_APP___iOLAP.AlamofireNetwork.requestWeatherViaCityName(CityName: Swift.String, completion: (LUCID_WEATHER_APP___iOLAP.Weather) -&gt; ()) -&gt; ()"
+                  moduleName = "LUCID WEATHER APP - iOLAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mateodoslic/Desktop/LUCID%20WEATHER%20APP%20-%20iOLAP/LUCID%20WEATHER%20APP%20-%20iOLAP/Network/AlamofireManager.swift"
+                  timestampString = "586613057.485801"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "1169">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in LUCID_WEATHER_APP___iOLAP.AlamofireNetwork.requestWeatherViaCityName(CityName: Swift.String, completion: (LUCID_WEATHER_APP___iOLAP.Weather) -&gt; ()) -&gt; ()"
+                  moduleName = "LUCID WEATHER APP - iOLAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mateodoslic/Desktop/LUCID%20WEATHER%20APP%20-%20iOLAP/LUCID%20WEATHER%20APP%20-%20iOLAP/Network/AlamofireManager.swift"
+                  timestampString = "586613057.488196"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "2158">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in LUCID_WEATHER_APP___iOLAP.AlamofireNetwork.requestWeatherViaCityName(CityName: Swift.String, completion: (LUCID_WEATHER_APP___iOLAP.Weather) -&gt; ()) -&gt; ()"
+                  moduleName = "LUCID WEATHER APP - iOLAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mateodoslic/Desktop/LUCID%20WEATHER%20APP%20-%20iOLAP/LUCID%20WEATHER%20APP%20-%20iOLAP/Network/AlamofireManager.swift"
+                  timestampString = "586613057.4906549"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "2242">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -11,13 +11,16 @@ import UIKit
 class CityNameViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var CityNameTableView: UITableView!
     @IBOutlet weak var locationWeatherButton: UIButton!
+    let controller = CityNameController()
     
-    let names = ["Zagreb", "Požega"]
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "City"
+        self.controller.fetchLocalData()
         CityNameTableView.delegate = self
         CityNameTableView.dataSource = self
+ 
+        CityNameTableView.reloadData()
 //        CityNameTableView.register(CityNameCell.self, forCellReuseIdentifier: "Cell")
 
         
@@ -25,13 +28,21 @@ class CityNameViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.names.count
+        guard let cities = self.controller.cityNames?.city else {
+            return 0
+            }
+        
+        return cities.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CityNameCell
-        cell.CityNameLabel?.text = self.names[indexPath.row]
+//        cell.CityNameLabel?.text = self.names[indexPath.row]
+        guard let cities = self.controller.cityNames?.city else {
+            return cell
+        }
+        cell.CityNameLabel?.text = cities[indexPath.row].name
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -50,6 +61,10 @@ class CityNameViewController: UIViewController, UITableViewDataSource, UITableVi
             let weatherForecastVC: WeatherForecastViewController = (segue.destination as! WeatherForecastViewController)
             if let senderIndexPath = sender as? IndexPath {
                 // Add a way to send data from this view to another
+                guard let cities = self.controller.cityNames?.city else {
+                    return
+                }
+                weatherForecastVC.controller.cityName = cities[senderIndexPath.row].name
             }
             if let senderLocation = sender as? Double {
                 // Send new data location to next screen
