@@ -78,6 +78,9 @@
                                 <state key="normal" title="Use my location">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="UseLocationButtonPressed:" destination="Gsg-pU-f3r" eventType="touchUpInside" id="nv8-wh-SXz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.26682434680246681" green="0.46462634839009886" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

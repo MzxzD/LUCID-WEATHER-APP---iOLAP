@@ -11,7 +11,6 @@ import Foundation
 class CityNameController {
     var cityNames: Cities?
     
-    
     func fetchLocalData() {
         self.cityNames = loadJson(filename: "Cities")
     }

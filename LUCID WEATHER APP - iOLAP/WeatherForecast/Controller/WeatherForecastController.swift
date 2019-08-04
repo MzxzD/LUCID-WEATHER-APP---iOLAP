@@ -14,6 +14,7 @@ class WeatherForecastController {
     let alamofireNetwork = AlamofireNetwork()
     var cityName: String = ""
     var weather: Weather?
+    var location: (long: Double, lati: Double) =  (long: 0, lati: 0)
     
     func fetchWeatherDataFromAPI(completion:@escaping (Weather)-> Void) {
         print(self.cityName)
@@ -22,7 +23,9 @@ class WeatherForecastController {
                 completion(weather)
             }
         } else {
-            print("Error in sending data from one view to another")
+            self.alamofireNetwork.requestWeatherViaCoord(log: location.long, lat: location.lati ) { (weather) in
+                completion(weather)
+            }
         }
      
 
