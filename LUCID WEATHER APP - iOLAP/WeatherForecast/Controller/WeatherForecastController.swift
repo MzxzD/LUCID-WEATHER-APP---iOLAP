@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import CoreData
+import UIKit
 
 class WeatherForecastController {
     let alamofireNetwork = AlamofireNetwork()
@@ -23,5 +25,35 @@ class WeatherForecastController {
             print("Error in sending data from one view to another")
         }
      
+
+    }
+    
+    
+    func saveCurrentCity(){
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "SavedWeather", in: context)
+        let newWeather = NSManagedObject(entity: entity!, insertInto: context)
+        
+        newWeather.setValue(self.weather!.name , forKey: "cityName")
+        newWeather.setValue(self.weather!.main!.humidity!, forKey: "humidity")
+        newWeather.setValue(self.weather!.main!.pressure! , forKey: "pressure")
+        newWeather.setValue(self.weather!.main!.temp! , forKey: "temperature")
+        newWeather.setValue(self.weather!.name , forKey: "weatherDescription")
+        newWeather.setValue(self.weather!.wind!.speed! , forKey: "windSpeed")
+        
+        
+        let date = Date()
+        let dateformatter = DateFormatter()
+        dateformatter.dateFormat = "dd/MM yyyy HH:mm"
+        let formatedDate = dateformatter.string(from: date)
+        newWeather.setValue(formatedDate , forKey: "date")
+        
+        do {
+            try context.save()
+        } catch {
+            print("Failed saving")
+        }
     }
 }

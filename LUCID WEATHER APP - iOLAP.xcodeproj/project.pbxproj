@@ -16,6 +16,8 @@
 		B53E95F922F6EFFC00429736 /* Cities.json in Resources */ = {isa = PBXBuildFile; fileRef = B53E95F822F6EFFC00429736 /* Cities.json */; };
 		B53E95FB22F6F03100429736 /* CityNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E95FA22F6F03100429736 /* CityNames.swift */; };
 		B53E95FD22F6F56900429736 /* WeatherForecastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E95FC22F6F56900429736 /* WeatherForecastController.swift */; };
+		B53E960122F7131900429736 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E960022F7131900429736 /* HistoryTableViewController.swift */; };
+		B53E960322F7132A00429736 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E960222F7132A00429736 /* HistoryController.swift */; };
 		B54EC3E122F4823C0071CCD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54EC3E022F4823C0071CCD7 /* AppDelegate.swift */; };
 		B54EC3E622F4823C0071CCD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54EC3E422F4823C0071CCD7 /* Main.storyboard */; };
 		B54EC3E922F4823C0071CCD7 /* LUCID_WEATHER_APP___iOLAP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B54EC3E722F4823C0071CCD7 /* LUCID_WEATHER_APP___iOLAP.xcdatamodeld */; };
@@ -36,6 +38,8 @@
 		B53E95F822F6EFFC00429736 /* Cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cities.json; sourceTree = "<group>"; };
 		B53E95FA22F6F03100429736 /* CityNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityNames.swift; sourceTree = "<group>"; };
 		B53E95FC22F6F56900429736 /* WeatherForecastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastController.swift; sourceTree = "<group>"; };
+		B53E960022F7131900429736 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		B53E960222F7132A00429736 /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
 		B54EC3DD22F4823C0071CCD7 /* LUCID WEATHER APP - iOLAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LUCID WEATHER APP - iOLAP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54EC3E022F4823C0071CCD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B54EC3E522F4823C0071CCD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 		B502016822F5785D0086622E /* History */ = {
 			isa = PBXGroup;
 			children = (
+				B53E95FF22F712DC00429736 /* Controller */,
+				B53E95FE22F712D200429736 /* View */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -147,6 +153,22 @@
 			isa = PBXGroup;
 			children = (
 				B53E95FC22F6F56900429736 /* WeatherForecastController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B53E95FE22F712D200429736 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B53E960022F7131900429736 /* HistoryTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B53E95FF22F712DC00429736 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B53E960222F7132A00429736 /* HistoryController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -304,10 +326,12 @@
 				B53E95FD22F6F56900429736 /* WeatherForecastController.swift in Sources */,
 				B53E95F722F6EFCA00429736 /* CityNameController.swift in Sources */,
 				B53E95FB22F6F03100429736 /* CityNames.swift in Sources */,
+				B53E960322F7132A00429736 /* HistoryController.swift in Sources */,
 				B54EC3E122F4823C0071CCD7 /* AppDelegate.swift in Sources */,
 				B502016322F4B1C70086622E /* CityNameCell.swift in Sources */,
 				B502016D22F57DC00086622E /* AlamofireManager.swift in Sources */,
 				B502017022F580660086622E /* Weather.swift in Sources */,
+				B53E960122F7131900429736 /* HistoryTableViewController.swift in Sources */,
 				B54EC3E922F4823C0071CCD7 /* LUCID_WEATHER_APP___iOLAP.xcdatamodeld in Sources */,
 				B502017422F5ABB40086622E /* WeatherForecastViewController.swift in Sources */,
 			);

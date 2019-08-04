@@ -44,6 +44,13 @@ class WeatherForecastViewController: UIViewController {
         
     }
     
+    @IBAction func saveCurrentCityData(_ sender: Any) {
+        self.controller.saveCurrentCity()
+        
+    }
+    
+    
+    
 
     func setupView() {
         self.controller.fetchWeatherDataFromAPI() { (weather) in

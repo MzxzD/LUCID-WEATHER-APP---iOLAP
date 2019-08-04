@@ -60,7 +60,6 @@ class CityNameViewController: UIViewController, UITableViewDataSource, UITableVi
             var selectedRowIndex = self.CityNameTableView.indexPathForSelectedRow
             let weatherForecastVC: WeatherForecastViewController = (segue.destination as! WeatherForecastViewController)
             if let senderIndexPath = sender as? IndexPath {
-                // Add a way to send data from this view to another
                 guard let cities = self.controller.cityNames?.city else {
                     return
                 }
