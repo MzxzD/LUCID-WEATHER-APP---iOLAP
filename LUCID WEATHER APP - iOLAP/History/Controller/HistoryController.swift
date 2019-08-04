@@ -15,13 +15,20 @@ class HistoryController {
     
     var savedWeather: [SavedWeatherClass] = []
     
-    func retrieveData() {
-        self.savedWeather = []
+    let managedContext: NSManagedObjectContext
+    let appDelegate: AppDelegate
+    
+    init() {
         //As we know that container is set up in the AppDelegates so we need to refer that container.
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        appDelegate = (UIApplication.shared.delegate as? AppDelegate)! 
         
         //We need to create a context from this container
-        let managedContext = appDelegate.persistentContainer.viewContext
+         managedContext = appDelegate.persistentContainer.viewContext
+    }
+    
+    func retrieveData() {
+        self.savedWeather = []
+
         
         //Prepare the request of type NSFetchRequest  for the entity
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "SavedWeather")
@@ -53,4 +60,27 @@ class HistoryController {
         }
     }
     
+    
+    func removeSelectedWeather(at: Int) {
+        do {
+            let fetchrequest = NSFetchRequest<NSFetchRequestResult>(entityName: "SavedWeather")
+            fetchrequest.predicate = NSPredicate(format: "date = %@", savedWeather[at].date)
+            
+            if  let result = try?  managedContext.fetch(fetchrequest){
+                for object in result {
+                    managedContext.delete(object as! NSManagedObject)
+                }
+            }
+        }
+        do{
+            try managedContext.save()
+            print("saved")
+        }catch let error as NSError {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+        self.savedWeather.remove(at: at)
+    }
+    
+    
 }
+// TODO: REMOVE WEATHER FROM CELL AND CORE DATA
